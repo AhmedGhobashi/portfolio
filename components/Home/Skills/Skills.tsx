@@ -1,6 +1,8 @@
-import SectionHeader from '@/components/Helper/SectionHeader'
-import { skillCategories } from '@/data'
-import React from 'react'
+import SectionHeader from '@/components/Helper/SectionHeader';
+import { skillCategories } from '@/data';
+import SkillCard from './SkillCard';
+
+
 
 const Skills = () => {
   return (
@@ -12,7 +14,7 @@ const Skills = () => {
         />
 
         <div className='space-y-12 w-[80%] mx-auto'>
-            {skillCategories.map((category, index)=>{
+            {skillCategories.map((category)=>{
                 return(
                     <div key={category.title} className=''>
                         <h3 className='text-xl font-semibold mb-6 flex items-center gap-3'>
@@ -20,8 +22,14 @@ const Skills = () => {
                             </span>
                             {category.title}
                         </h3>
-                        <div> 
-                            
+                        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 '> 
+                            {category.skills.map((skill, index)=>{
+                                return(
+                                    <div key={index}>
+                                        <SkillCard name={skill.name} icon={skill.icon}/>
+                                    </div>
+                                )
+                            })}
                         </div>
                     </div>
                 )
