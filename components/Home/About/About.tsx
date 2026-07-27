@@ -10,14 +10,14 @@ const About = () => {
 
       <div className='grid w-[80%] mx-auto lg:grid-cols-2 gap-12 items-center'> 
       {/* image div */}
-        <div className='relative'> 
+        <div data-aos='fade-right' data-aos-delay="0" data-aos-anchor-placement="top-center" className='relative'> 
           <div className='aspect-square rouned-2xl overflow-hidden p-2 '>
             <Image src ={"/images/user.jpeg"} width={700} height = {700} loading="eager"  alt='portfolio-image' className='w-fll h-full object-center rounded-xl' />
           </div>
         </div>
 
       {/* content div */}
-        <div className='space-y-6'>
+        <div  data-aos='fade-left' data-aos-delay="100" data-aos-anchor-placement="top-center"  className='space-y-6'>
           <h3 className='text-2xl font-semibold'>A passionate developer who loves to create</h3>
           <p className='text-muted-foreground leading-relaxed '>
             I'm a full-stack developer with over 1 year :D of experience building web applications. My journey started with curiosity about how websites work, and it has evolved into a passion for creating seamless, user-focused digital experiences.
@@ -28,7 +28,7 @@ const About = () => {
           </p>
 
           {/* Highlights */}
-          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4  '>
+          <div    className='grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4  '>
             {highlights.map ((item,index)=>{
               return (
               <div key={index} className='flex items-center gap-3 text-sm'> 
@@ -54,7 +54,7 @@ const About = () => {
             <div className='grid grid-cols-2 sm:grid-cols-4 gap-6'>
               {stats.map((stat)=>{
                 return(
-                  <div key={stat.label} className='bg-white dark:bg-gray-800 shadow rounded-xl p-6 text-center'> 
+                  <div  data-aos='zoom-in' data-aos-delay="150" data-aos-anchor-placement="top-center" key={stat.label} className='bg-white dark:bg-gray-800 shadow rounded-xl p-6 text-center'> 
                     <div className='text-3xl md:text-4xl font-bold text-purple-600 mb-2 '>
                       {stat.value}
                     </div>

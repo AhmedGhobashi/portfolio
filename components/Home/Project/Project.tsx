@@ -14,7 +14,7 @@ const Project = () => {
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-[80%] mx-auto '>
         {projects.map((project,index)=>{
             return(
-                <div key={index} className=''>
+                <div data-aos='fade-up' data-aos-delay="100" data-aos-anchor-placement="top-center" key={index} className=''>
                      {/* project card component  */}
                      <ProjectCard {...project} />
                 </div>
