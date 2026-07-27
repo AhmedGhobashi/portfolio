@@ -73,15 +73,15 @@ export const userReviewData = [
 export const contactInfo = [
   {
     icon: Mail,
-    label: "Email",
-    value: "hello@ahmedmeow.dev",
-    href: "mailto:hello@johndoe.dev",
+    label: "Gmail",
+    value: "ahmed.osamaa2000@gmail.com",
+    href: "#",
   },
   {
     icon: Phone,
-    label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    label: "Telegram",
+    value: "+201505892698",
+    href: "#",
   },
   {
     icon: MapPin,
@@ -92,120 +92,111 @@ export const contactInfo = [
 ];
 
 export const socialLinks = [
-  { icon: FaGithub, href: "https://github.com", label: "GitHub" },
-  { icon: FaLinkedinIn, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: FaGithub, href: "https://github.com/AhmedGhobashi", label: "GitHub" },
+  { icon: FaLinkedinIn, href: "https://www.linkedin.com/in/ahmed-usama-46500a308/", label: "LinkedIn" },
+  { icon: FaTwitter, href: "https://x.com/ahmedGhobashiAh", label: "Twitter" },
 ];
 
 export const experiences = [
   {
     type: "work",
-    title: "Senior Full-Stack Developer",
-    company: "TechCorp Inc.",
-    period: "2022 - Present",
+    title: "Entry Full-Stack Developer",
+    company: "fake company",
+    period: "2026 - Present",
     description:
-      "Leading development of enterprise SaaS products. Mentoring junior developers and implementing best practices.",
-    technologies: ["React", "Node.js", "AWS", "TypeScript"],
-  },
-  {
-    type: "work",
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
-    period: "2020 - 2022",
-    description:
-      "Built and maintained multiple web applications. Collaborated with design team to implement responsive UIs.",
-    technologies: ["Vue.js", "Python", "PostgreSQL", "Docker"],
+      "Leading development of enterprise SaaS products. ",
+    technologies: ["React", "Node.js", "Next JS", "Strapi", "TypeScript"],
   },
   {
     type: "education",
-    title: "Master of Computer Science",
-    company: "Stanford University",
-    period: "2018 - 2020",
+    title: "BackEnd NextJS",
+    company: "Online Youtube",
+    period: "2026 - 2026",
     description:
-      "Specialized in distributed systems and machine learning. Thesis on scalable microservices architecture.",
-    technologies: ["Research", "AI/ML", "Distributed Systems"],
+      "Built and maintained multiple web applications. connecting backend with real databases and producing the APIs.",
+    technologies: ["Next.js", "Typescript", "PostgreSQL", "prisma"],
   },
   {
     type: "work",
-    title: "Junior Developer",
-    company: "WebAgency Co.",
-    period: "2018 - 2020",
+    title: "strengthens my react state management",
+    company: "Kimz codes Academy",
+    period: "2025 - 2026",
     description:
-      "Developed client websites and e-commerce platforms. Gained experience in agile methodologies.",
-    technologies: ["JavaScript", "PHP", "MySQL", "WordPress"],
+      "Specialized in FrontEnd and State management modern tools for scalable projects like (rtk).",
+    technologies: ["React", "Redux Toolkit", "Performance Optimization"],
   },
   {
     type: "education",
-    title: "Bachelor of Computer Science",
-    company: "UC Berkeley",
-    period: "2014 - 2018",
+    title: "Bachelor of Computer & Control Engineering",
+    company: "HIET-KFS-Egypt",
+    period: "2018 - 2024",
     description:
-      "Strong foundation in algorithms, data structures, and software engineering principles.",
-    technologies: ["Computer Science", "Mathematics", "Problem Solving"],
+      "Strong foundation in data structures, electricity, mathematics, problem solving and software engineering principles.",
+    technologies: ["Computer Science", "Mathematics", "Problem Solving", "Control", "AI"],
   },
 ];
 
 export const footerSocialLinks = [
-  { icon: FaGithub, href: "https://github.com", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: FaGithub, href: "https://github.com/AhmedGhobashi", label: "GitHub" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/ahmed-usama-46500a308/", label: "LinkedIn" },
+  { icon: FaTwitter, href: "https://x.com/ahmedGhobashiAh", label: "Twitter" },
+  { icon: Mail, href: "https://www.facebook.com/nandimonai.ghobashi", label: "Email" },
 ];
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "VastoSpaze landing page",
     description:
-      "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
-    image: "/images/p1.jpg",
-    techStack: ["Next.js", "TypeScript", "Stripe", "MongoDB"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "A landing page, using react, and bootstrap {smooth classy website}.",
+    image: "/images/vasto.png",
+    techStack: ["ReacrJS", "Bootstrap", "CSS"],
+    demoUrl: "https://vastu-spaze-ghobashi.netlify.app/",
+    githubUrl: "https://github.com/AhmedGhobashi/Vastu-Spaze",
   },
   {
-    title: "Task Management App",
+    title: "socialMediaWebsite",
     description:
-      "Collaborative project management tool with real-time updates, Kanban boards, and team analytics.",
+      "This is the final project as an application on Javascript course and bootstrab training and understanding the API and postman concepts",
     image: "/images/p2.jpg",
-    techStack: ["React", "Node.js", "Socket.io", "PostgreSQL"],
+    techStack: ["Vanilla JS", "Node.js", "Bootstrap", "Axios"],
     demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/AhmedGhobashi/socialMediaWebsite",
   },
   {
-    title: "AI Content Generator",
+    title: "BookStore-with-RTK",
     description:
-      "GPT-powered content creation platform for marketers with templates and workflow automation.",
+      "This is a simple application using reduxToolkit/AsyncThunk",
     image: "/images/p3.jpg",
-    techStack: ["React", "Python", "OpenAI", "FastAPI"],
+    techStack: ["React", "ReduxToolKit", "Bootstrap", "JsonServer"],
     demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/AhmedGhobashi/BookStore-with-RTK-",
   },
   {
-    title: "Real Estate Platform",
+    title: "My First Portfolio",
     description:
-      "Property listing platform with virtual tours, mortgage calculator, and agent booking system.",
+      "My first Portfolio with my first simple porjects ",
     image: "/images/p4.jpg",
-    techStack: ["Vue.js", "Node.js", "MongoDB", "Maps API"],
+    techStack: ["NextJS", "Node.js", "ReactJS", "ShadCN", "AOS", "TypeScript"],
     demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/AhmedGhobashi/portfolio",
   },
   {
-    title: "Fitness Tracker",
+    title: "NEXT JS Basic Project(posts)",
     description:
-      "Cross-platform mobile app for workout tracking, nutrition logging, and progress analytics.",
+      "A basic website with: responsive design, authenticationand authorization ,flexible and secured CRUD methods, real database integration (prisma/postgresql), pagination",
     image: "/images/p5.jpg",
-    techStack: ["React Native", "Firebase", "Node.js", "Charts"],
+    techStack: ["Next js", "Prisma ORM", "Node.js", "React", "TypeScript"],
     demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/AhmedGhobashi/next-js-phase1",
   },
   {
-    title: "Learning Management System",
+    title: "Tailwind-React-Landing-Page",
     description:
-      "Educational platform with video streaming, quizzes, progress tracking, and certificates.",
+      "Educational Page to apply Tailwind CSS skills with react",
     image: "/images/p6.jpg",
     techStack: ["Next.js", "Prisma", "AWS S3", "Stripe"],
     demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/AhmedGhobashi/Tailwind-React-Landing-Page",
   },
 ];
 
