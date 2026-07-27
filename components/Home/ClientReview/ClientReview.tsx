@@ -1,0 +1,54 @@
+'use client';
+
+import SectionHeader from '@/components/Helper/SectionHeader';
+import { userReviewData } from '@/data';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import ReviewCard from './ReviewCard';
+
+const ClientReview = () => {
+
+    const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1324 },
+    items: 3,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1324, min: 764 },
+    items: 2,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 764, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+  return (
+    <div className='py-20 bg-gray-100 dark:bg-gray-900'>
+        <div className='w-[80%] mx-auto'>
+            <SectionHeader  title_1='Our Client' title_2='Reviews' description='Checkout our client reviews'/>
+
+            <div className='mt-14'>
+                <Carousel   
+                    showDots={true}
+                    responsive={responsive}
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={5000}
+                    arrows={true}
+                    transitionDuration={300}
+                    >
+                    {userReviewData.map((user)=>{
+                        return <div key={user.id}><ReviewCard user={user} /></div>
+                    })}
+                </Carousel>
+            </div>
+        </div>
+      
+    </div>
+  )
+}
+
+export default ClientReview
